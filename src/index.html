@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Forge</title>
     <link href="/dist/output.css" rel="stylesheet" />
+    <script src="https://unpkg.com/@phosphor-icons/web"></script>
   </head>
   <body class="bg-forge-gray">
     <header class="mb-48 h-screen px-24 pt-10">
@@ -31,7 +32,7 @@
       </section>
     </header>
 
-    <section class="mx-32 h-screen">
+    <section class="mx-32 mb-32 border-b-2 border-b-slate-800">
       <h2 class="mb-20 text-center text-7xl font-bold uppercase text-white">
         Unleashing Your <span class="text-forge-main">Imagination</span>
       </h2>
@@ -52,5 +53,103 @@
         </article>
       </div>
     </section>
+
+    <section
+      class="mx-32 mb-48 grid grid-cols-2 place-items-center gap-y-12 border-b-2 border-b-slate-800 pb-48 text-center text-3xl text-white"
+    >
+      <div>
+        <h3 class="mb-4 text-6xl font-bold text-forge-accent">50+</h3>
+        <p>Hand-crafted dice components</p>
+      </div>
+      <div>
+        <h3 class="mb-4 text-6xl font-bold text-forge-accent">200+</h3>
+        <p>Figurine and board types</p>
+      </div>
+      <div class="col-span-2">
+        <h3 class="mb-4 text-8xl font-bold text-forge-main">2,000</h3>
+        <p>Satisfied Dungeon Masters</p>
+      </div>
+    </section>
+
+    <section class="h-screen border-b-2 border-b-slate-800 text-white">
+      <h2 class="mb-32 flex justify-center text-7xl font-bold uppercase">
+        Services
+      </h2>
+
+      <div class="slider relative mx-48 bg-slate-200">
+        <article class="slide absolute flex place-items-center gap-24">
+          <img src="img/service-dices.png" alt="" class="max-w-2xl" />
+          <div class="text-3xl">
+            <h3 class="mb-6 text-6xl font-bold text-forge-accent">
+              Dice Crafting
+            </h3>
+            <p class="mb-6">
+              Choose from a wide variety of materials, including premium metals,
+              exquisite gemstones, and captivating resins, each carefully
+              selected for its <span class="text-forge-main">beauty</span> and
+              <span class="text-forge-main">durability</span>.
+            </p>
+            <p>
+              From the luxurious weight of metal dice to the enchanting
+              translucency of gemstone dice, our materials offer a tactile and
+              visual experience that enhances your gameplay.
+            </p>
+          </div>
+        </article>
+
+        <article class="slide absolute flex place-items-center gap-24">
+          <img src="img/service-figurines.png" alt="" class="max-w-2xl" />
+          <div class="text-3xl">
+            <h3 class="mb-6 text-6xl font-bold text-forge-accent">
+              Custom Figurines
+            </h3>
+            <p class="mb-6">
+              Embrace your creativity as you personalize your figurines with a
+              multitude of options, including
+              <span class="text-forge-main"
+                >dynamic poses, intricate accessories</span
+              >, and <span class="text-forge-main">customizable details</span>.
+            </p>
+            <p>
+              Unleash the power of your imagination with our bespoke figurine
+              crafting service, and let your characters and creatures become
+              legends on the gaming table.
+            </p>
+          </div>
+        </article>
+
+        <article class="slide absolute flex place-items-center gap-24">
+          <img src="img/service-boards.png" alt="" class="max-w-2xl" />
+          <div class="text-3xl">
+            <h3 class="mb-6 text-6xl font-bold text-forge-accent">
+              Game Boards
+            </h3>
+            <p class="mb-6">
+              With Forge, you have the opportunity to bring your gaming visions
+              to life through
+              <span class="text-forge-main">custom-made game boards</span> that
+              reflect your unique style, preferences, and gaming themes.
+            </p>
+            <p>
+              Our team of skilled artisans and designers will collaborate
+              closely with you, ensuring that every detail of your game board is
+              thoughtfully considered and expertly executed.
+            </p>
+          </div>
+        </article>
+
+        <button class="absolute -left-16 top-64">
+          <i class="ph-fill ph-arrow-left text-5xl"></i>
+        </button>
+        <button class="absolute -right-16 top-64">
+          <i class="ph-fill ph-arrow-right text-5xl"></i>
+        </button>
+      </div>
+    </section>
+
+    <footer class="flex flex-col items-center p-12 text-slate-400">
+      <p>Designed by Jakub Nasta</p>
+      <p>Copyright &copy; 2023</p>
+    </footer>
   </body>
 </html>
