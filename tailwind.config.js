@@ -11,7 +11,24 @@ module.exports = {
       width: {
         120: "75rem",
       },
+      keyframes: {
+        slidein: {
+          "0%": {
+            opacity: "0",
+            "margin-left": "100%",
+            width: "300%",
+          },
+          "100%": {
+            opacity: "1",
+            "margin-left": "0%",
+            width: "100%",
+          },
+        },
+      },
+      animation: {
+        slidein: "slidein 0.5s",
+      },
     },
+    plugins: [],
   },
-  plugins: [],
 };

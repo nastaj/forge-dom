@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" class="scroll-smooth">
   <head>
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
@@ -7,19 +7,22 @@
     <title>Forge</title>
     <link href="/dist/output.css" rel="stylesheet" />
     <script src="https://unpkg.com/@phosphor-icons/web"></script>
+    <script defer src="script.js"></script>
   </head>
   <body class="bg-forge-gray">
-    <header class="mb-48 h-screen px-24 pt-10">
-      <nav class="mb-16 flex justify-between">
-        <img src="img/logo-no-background.png" alt="Forge logo" class="h-20" />
-        <ul class="flex gap-20 px-5 text-3xl text-white">
-          <li><a href="#">About Us</a></li>
-          <li><a href="#">Services</a></li>
-          <li><a href="#">Workshop</a></li>
-        </ul>
-      </nav>
+    <nav
+      class="nav z-50 flex justify-between bg-forge-gray bg-opacity-50 px-24 pb-9 pt-10"
+    >
+      <img src="img/logo-no-background.png" alt="Forge logo" class="h-20" />
+      <ul class="flex gap-20 px-5 text-3xl text-white">
+        <li><a href="#about">About Us</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#">Workshop</a></li>
+      </ul>
+    </nav>
 
-      <section class="grid grid-cols-2 grid-rows-1 place-items-center">
+    <header class="header h-screen px-24 pt-10">
+      <section class="mt-10 grid grid-cols-2 grid-rows-1 place-items-center">
         <div>
           <h1 class="text-8xl font-bold uppercase text-white">
             <span class="text-forge-main">Roll</span> Your Games With
@@ -32,7 +35,7 @@
       </section>
     </header>
 
-    <section class="mx-32 mb-32 border-b-2 border-b-slate-800">
+    <section class="mx-32 mb-32 border-b-2 border-b-slate-800" id="about">
       <h2 class="mb-20 text-center text-7xl font-bold uppercase text-white">
         Unleashing Your <span class="text-forge-main">Imagination</span>
       </h2>
@@ -55,23 +58,30 @@
     </section>
 
     <section
-      class="mx-32 mb-48 grid grid-cols-2 place-items-center gap-y-12 border-b-2 border-b-slate-800 pb-48 text-center text-3xl text-white"
+      class="stats mx-32 mb-48 grid grid-cols-2 place-items-center gap-y-12 border-b-2 border-b-slate-800 pb-48 text-center text-3xl text-white"
     >
       <div>
-        <h3 class="mb-4 text-6xl font-bold text-forge-accent">50+</h3>
+        <h3 class="stat--dices mb-4 text-6xl font-bold text-forge-accent">
+          50+
+        </h3>
         <p>Hand-crafted dice components</p>
       </div>
       <div>
-        <h3 class="mb-4 text-6xl font-bold text-forge-accent">200+</h3>
+        <h3 class="stat--figurines mb-4 text-6xl font-bold text-forge-accent">
+          200+
+        </h3>
         <p>Figurine and board types</p>
       </div>
       <div class="col-span-2">
-        <h3 class="mb-4 text-8xl font-bold text-forge-main">2,000</h3>
+        <h3 class="stat--dms mb-4 text-8xl font-bold text-forge-main">2,000</h3>
         <p>Satisfied Dungeon Masters</p>
       </div>
     </section>
 
-    <section class="h-screen border-b-2 border-b-slate-800 text-white">
+    <section
+      class="h-screen border-b-2 border-b-slate-800 text-white"
+      id="services"
+    >
       <h2 class="mb-32 flex justify-center text-7xl font-bold uppercase">
         Services
       </h2>
