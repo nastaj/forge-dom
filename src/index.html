@@ -11,7 +11,7 @@
   </head>
   <body class="bg-forge-gray">
     <nav
-      class="nav z-50 flex justify-between bg-forge-gray bg-opacity-50 px-24 pb-9 pt-10"
+      class="nav z-50 flex animate-navLoad justify-between bg-forge-gray bg-opacity-50 px-24 pb-9 pt-10"
     >
       <img src="img/logo-no-background.png" alt="Forge logo" class="h-20" />
       <ul class="flex gap-20 px-5 text-3xl text-white">
@@ -21,7 +21,7 @@
       </ul>
     </nav>
 
-    <header class="header h-screen px-24 pt-10">
+    <header class="header h-screen animate-slideHeaderLoad px-24 pt-10">
       <section class="mt-10 grid grid-cols-2 grid-rows-1 place-items-center">
         <div>
           <h1 class="text-8xl font-bold uppercase text-white">
@@ -86,8 +86,11 @@
         Services
       </h2>
 
-      <div class="slider relative mx-48 bg-slate-200">
-        <article class="slide absolute flex place-items-center gap-24">
+      <div class="slider relative mx-48 h-[50rem] max-w-full overflow-hidden">
+        <article
+          class="slide absolute flex place-items-center gap-24 transition duration-700"
+          style="transform: translateX(0%)"
+        >
           <img src="img/service-dices.png" alt="" class="max-w-2xl" />
           <div class="text-3xl">
             <h3 class="mb-6 text-6xl font-bold text-forge-accent">
@@ -107,7 +110,10 @@
           </div>
         </article>
 
-        <article class="slide absolute flex place-items-center gap-24">
+        <article
+          class="slide absolute flex place-items-center gap-24 transition duration-700"
+          style="transform: translateX(100%)"
+        >
           <img src="img/service-figurines.png" alt="" class="max-w-2xl" />
           <div class="text-3xl">
             <h3 class="mb-6 text-6xl font-bold text-forge-accent">
@@ -128,7 +134,10 @@
           </div>
         </article>
 
-        <article class="slide absolute flex place-items-center gap-24">
+        <article
+          class="slide absolute flex place-items-center gap-24 transition duration-700"
+          style="transform: translateX(200%)"
+        >
           <img src="img/service-boards.png" alt="" class="max-w-2xl" />
           <div class="text-3xl">
             <h3 class="mb-6 text-6xl font-bold text-forge-accent">
@@ -148,10 +157,10 @@
           </div>
         </article>
 
-        <button class="absolute -left-16 top-64">
+        <button class="slider__btn--left absolute left-0 top-[16rem]">
           <i class="ph-fill ph-arrow-left text-5xl"></i>
         </button>
-        <button class="absolute -right-16 top-64">
+        <button class="slider__btn--right absolute right-0 top-[16rem]">
           <i class="ph-fill ph-arrow-right text-5xl"></i>
         </button>
       </div>

@@ -24,9 +24,29 @@ module.exports = {
             width: "100%",
           },
         },
+        slideHeaderLoad: {
+          "0%": {
+            opacity: "0",
+            transform: "translateY(-10rem)",
+          },
+          "100%": {
+            opacity: "1",
+            transform: "translateY(0)",
+          },
+        },
+        navLoad: {
+          "0%": {
+            opacity: "0",
+          },
+          "100%": {
+            opacity: "1",
+          },
+        },
       },
       animation: {
         slidein: "slidein 0.5s",
+        slideHeaderLoad: "slideHeaderLoad 3s",
+        navLoad: "navLoad 1.5s",
       },
     },
     plugins: [],

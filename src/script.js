@@ -100,3 +100,30 @@ const statsObserver = new IntersectionObserver(startCounter, {
 });
 
 statsObserver.observe(sectionStats);
+
+// Slider
+const slides = document.querySelectorAll(".slide");
+const btnLeft = document.querySelector(".slider__btn--left");
+const btnRight = document.querySelector(".slider__btn--right");
+
+let curSlide = 0;
+const maxSlide = slides.length;
+
+const goToSlide = (slide) => {
+  slides.forEach(
+    (s, i) => (s.style.transform = `translateX(${100 * (i - slide)}%)`)
+  );
+};
+
+const nextSlide = () => {
+  curSlide === maxSlide - 1 ? (curSlide = 0) : curSlide++;
+  goToSlide(curSlide);
+};
+
+const prevSlide = () => {
+  curSlide === 0 ? (curSlide = maxSlide - 1) : curSlide--;
+  goToSlide(curSlide);
+};
+
+btnLeft.addEventListener("click", prevSlide);
+btnRight.addEventListener("click", nextSlide);
